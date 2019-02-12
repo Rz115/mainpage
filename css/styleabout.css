@@ -1,0 +1,332 @@
+header {position: absolute;z-index: 10;width: 100%;font-family: 'Bad Script', cursive;padding: 30px;}
+ 
+main {flex: 1 0 auto;}
+
+.navbar{padding: 20px 0;}
+
+.navbar-brand {font-weight: 800;text-transform: uppercase;font-size: 2em;color: #fff;}
+
+/*
+.navbar-toggler-icon {
+    -webkit-filter: invert(100%);
+} */
+
+.nav-item{font-weight: 800;text-transform: uppercase;font-family: 'Kaushan Script', cursive;}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link  {background: #262626;color: #fff;}
+
+.navbar-light .navbar-nav .nav-item .nav-link {color: #000000;padding: 5px 20px;}
+
+.banner
+{
+    position: relative;
+    background: url("../pictures/amanecer.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+}
+
+.banner h2{
+
+    margin: 0;
+    padding: 0;
+    font-size: 2.6em;
+    font-weight: 1000;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+
+
+.banner p{
+
+    margin: 1em 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: 'Kalam', cursive;
+    line-height: 1.5em;
+    color: #000000;
+  
+}
+
+.banner footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:80px;
+    width:100%;
+    background:#999;
+  
+}
+
+.btnD1{
+ display: inline;
+ margin: 1em 0 0;
+ background: #ff2670;
+ color: #fff;
+ padding: 10px 20px;
+ text-transform: uppercase;
+ border: none;
+ font-weight: 800;
+}
+.btnD1:hover{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navbar-light .navbar-toggler
+{
+    border: none;
+    color: #fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+}
+
+.footer-copyright {
+    padding: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Magra', cursive;
+    font-size: 1em;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    
+    overflow-y: auto;
+
+}
+
+
+  @media only screen and (max-width : 992px) {
+    .parallax-container .section {
+      position: absolute;
+      top: 40%;
+    }
+    
+    #index-banner .section {
+      top: 10%;
+    }
+    #social-platforms {
+        position:relative;
+        top:300px;
+        top:1vh;
+        font-size:1rem;
+        text-align:center;
+        height:250px;
+        overflow:hidden;
+    }
+
+    .footer-copyright {
+        padding: 10px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0);
+        color: rgb(0, 0, 0);
+        font-family: 'Magra', cursive;
+        font-size: 1em;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        
+        overflow-y: auto;
+    
+    }
+  }
+  
+  @media only screen and (max-width : 600px) {
+    #index-banner .section {
+      top: 0;
+    }
+    #social-platforms {
+        position:relative;
+        top:300px;
+        top:1vh;
+        font-size:1rem;
+        text-align:center;
+        height:250px;
+        overflow:hidden;
+    }
+
+    .footer-copyright {
+    padding: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Magra', cursive;
+    font-size: 1em;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    
+    overflow-y: auto;
+
+}
+  }
+ /* ABOUT PAGE CODE--------------------------------------------------------------------- */
+  .navbar-brands {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #000000;
+}
+
+.navbar-brands:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.bannerabout
+{
+    position: relative;
+    background: url(amanecer.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+}
+
+
+.bannerabout h2{
+
+    margin: 0;
+    padding: 0;
+    font-size: 2.2em;
+    font-weight: 1000;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.bannerabout p{
+
+    margin: 1em 0;
+    padding: 0;
+    font-size: 1.2em;
+ 
+    line-height: 1.5em;
+    color: #fff;
+  
+}
+
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+/*Ignore me, I'm just page styling*/
+html {font-family: 'Roboto', sans-serif;font-size:16px;line-height:1em;height:100%;}
+body {
+  background: #ffffff;
+  background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #F2F2F2 50%, #F2F2F2 50%, #F2F2F2 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#F2F2F2), color-stop(50%,#F2F2F2), color-stop(100%,#F2F2F2));
+  background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -o-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -ms-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: linear-gradient(135deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+}
+
+h1 {font-size:1.5em;margin-bottom:55px;}
+
+#social-platforms {
+    position:relative;
+    top:300px;
+    top:18vh;
+    font-size:1rem;
+    text-align:center;
+    height:230px;
+    overflow:hidden;
+}
+
+/*Pen code from this point on*/
+.btn {
+  clear:both;
+  white-space:nowrap;
+  font-size:.8em;
+  display:inline-block;
+  border-radius:5px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin:2px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  overflow:hidden
+}
+
+.btn:hover {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn > span,.btn-icon > i {
+  float:left;
+  padding:13px;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  transition:all .5s;
+  line-height:1em
+}
+
+.btn > span {
+  padding:14px 18px 16px;
+  white-space:nowrap;
+  color:#FFF;
+  background:#b8b8b8
+}
+
+.btn:focus > span {
+  background:#9a9a9a
+}
+
+.btn-icon > i {
+  border-radius:5px 0 0 5px;
+  position:relative;
+  width:13px;
+  text-align:center;
+  font-size:1.25em;
+  color:#fff;
+  background:#212121
+}
+
+.btn-icon > i:after {
+  content:"";
+  border:8px solid;
+  border-color:transparent transparent transparent #222;
+  position:absolute;
+  top:13px;
+  right:-15px
+}
+
+.btn-icon:hover > i,.btn-icon:focus > i {color:#FFF}
+
+.btn-icon > span {border-radius:0 5px 5px 0}
+
+/*Instagram*/
+.btn-instagram:hover > i,.btn-instagram:focus > i {color:#833ab4}
+
+.btn-instagram > span {background: linear-gradient(#833ab4,#fd1d1d,#fcb045 );}
+
+/*Twitter*/
+.btn-twitter:hover > i,.btn-twitter:focus > i {color:#55acee}
+
+.btn-twitter > span {background:#55acee}
+
+/*Google*/
+.btn-googleplus:hover > i,.btn-googleplus:focus > i {color:#dd4b39}
+
+.btn-googleplus > span {background:#dd4b39}
+
+/*GitHub*/
+.btn-github:hover > i,.btn-github:focus > i {color:#333}
+
+.btn-github > span {background:#333}
+
+/*LinkedIn*/
+.btn-linkedin:hover > i,.btn-linkedin:focus > i {color:#007bb6}
+
+.btn-linkedin > span { background:#007bb6}
+
