@@ -1,6 +1,6 @@
 header {position: absolute;z-index: 10;width: 100%;font-family: 'Bad Script', cursive;padding: 30px;}
 
-body {display: flex;min-height: 100vh;flex-direction: column;}
+body {display: flex;min-height: 100vh;height:100px;flex-direction: column;}
 
 main { flex: 1 0 auto;}
 
@@ -18,12 +18,6 @@ main { flex: 1 0 auto;}
 .banner h2{margin: 0;padding: 0;font-size: 2.8em;font-weight: 1000;color: #fff;text-transform: uppercase;}
 
 .banner p{margin: 1em 0;padding: 0;font-size: 1.2em;line-height: 1.5em;color: #000000;}
-
-.banner footer{position:fixed;left:0px;bottom:0px;height:80px;width:100%;background:#999;}
-
-.btnD1{display: inline;margin: 1em 0 0;background: #ff2670;color: #fff;padding: 10px 20px;text-transform: uppercase;border: none;font-weight: 800;}
-
-.btnD1:hover{color: #fff;text-decoration: none;}
 
 .navbar-light .navbar-toggler{border: none;color: #fff;border: 2px solid #7f7f7f;border-radius: 0;outline: none;}
 
@@ -84,9 +78,9 @@ h4.juegostitulo{font-family: 'Press Start 2P', cursive;}
 
     .linksdownload a i { color: #fff; }
 
-    .color-1{background: #0f9b0f;  }
+    .color-1{background: #450f9b;  }
     
-    .color-2{ background: #a8e063;  }
+    .color-2{ background: #0f9b0f;  }
       
     .color-3{background: #56ab2f;   }
 
@@ -101,14 +95,57 @@ h4.juegostitulo{font-family: 'Press Start 2P', cursive;}
     /* ----------------- MEDIDA PARA TABLETS---------- */
 @media only screen and (max-width : 992px) {
     .banner{position: relative;background: url("../pictures/atardecer.jpg");min-height: 100vh;background-size: cover;background-position: center;padding: 250px 0 100px}
-    }
+
+    /* -----------------------------AQUI comienza el diseño de footer -----------------*/
+footer {position: absolute;;left:0px;bottom:0px;height:100px;width:100%;background:#999;}
+
+.sci{margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;}
+
+.sci li {list-style: none;margin: 0 20px;}
+
+.sci li a {color: rgb(29, 29, 29);font-size: 2em;transition: 0.5s;}
+
+.sci li a:hover {color: #fff;}
+
+.copyrt{color: #777;text-align: center;}
+
+.copyrt:hover{color: #fff;transition: 0.5s;}  
+
+}
     /* ----------------- MEDIDA PARA PC---------- */
 @media only screen and (min-width: 768px) { 
     .banner{position: relative;background: url("../pictures/atardecer.jpg");min-height: 100vh;background-size: cover;background-position: center;padding: 250px 0 100px}
-    }
     
+    /* -----------------------------AQUI comienza el diseño de footer -----------------*/
+footer {position: absolute;;left:0px;bottom:0px;height:100px;width:100%;background:#999;}
+
+.sci{margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;}
+
+.sci li {list-style: none;margin: 0 20px;}
+
+.sci li a {color: rgb(24, 24, 24);font-size: 2em;transition: 0.5s;}
+
+.sci li a:hover {color: #fff;}
+
+.copyrt{color: #777;text-align: center;}
+
+.copyrt:hover{color: #fff;transition: 0.5s;}
+
+}
+  /* ----------------- MEDIDA PARA PC---------- */   
 @media screen and (max-width : 640px) {
     .banner {padding: 265px 0 100px;background: linear-gradient(#E3E1E2, #f2f2f2, #dbdbdb, #E3E1E2) ;
         }    
         .card:hover{transform: scale(1);}
+  /* -----------------------------AQUI comienza el diseño de footer -----------------*/
+  footer {position: absolute;;left:0px;bottom:0px;height:100px;width:100%;background:#999;}
+
+  .sci{margin: 0;padding: 0;display: flex;justify-content: center;align-items: center;}
+  
+  .sci li {list-style: none;margin: 0 20px;}
+  
+  .sci li a {color: rgb(22, 22, 22);font-size: 2em;transition: 0.5s;}
+  
+  .copyrt{color: rgb(29, 29, 29);text-align: center;}
+
     }
