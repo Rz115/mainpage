@@ -11,6 +11,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Cinzel|Gloria+Hallelujah|Indie+Flower|Kalam|Magra|Merienda|Press+Start+2P|Bad+Script|Kaushan+Script"
     rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -77,11 +78,10 @@
                 This is a personal blog about programming, books, video games, music, anime,
                 topics on internet, tv shows and movies.
                 <br>...</p>
-
             </p>
           </p><br>
           <button type="button" class="btn color-change-2x" data-toggle="button" aria-pressed="false" autocomplete="off"
-            onClick="document.getElementById('readmore').scrollIntoView();">
+            onClick="document.getElementById('readmore').scrollIntoView();" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">
             Read More
           </button>
 
@@ -89,7 +89,6 @@
       </div> <!-- Aqui termina la primera fila-->
     </div> <!-- Aqui termina el container-->
     <br>
-
   </section>
 
   <section class="sec1" id="readmore">
@@ -97,65 +96,85 @@
       <div class="row">
         <div class="offset-sm-2 col-sm-8">
           <div class="headerText">
-            <h2> New Posts</h2>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.</p>
-
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> New Posts</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> 
+              Some of the posts I've realized. 
+                I want to share some life experiences. 
+                I hope these can serve you in some way.
+                Let me know what you think in the comments of the post 
+                that you are interested in reading.  </p>
           </div>
-
         </div>
       </div> <!-- Aqui termina el container-->
 
-
       <div class="row">
         <div class="col-sm-4">
-          <div class="placeBox">
+          <div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <div class="imgBx">
               <img src="pictures/tema.png" class="img-fluid">
 
             </div>
             <div class="content">
-              <h3> Nombre de Publicación <br> <span> Descripción de publicación</span></h3>
+              <h3> Publication name <br> <span> About this post...<br>
+                  <a href="#" class="btn botonpost">Read More </a>
+              </span></h3>
             </div>
           </div>
         </div>
 
         <div class="col-sm-4">
-          <div class="placeBox">
+          <div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <div class="imgBx">
               <img src="pictures/tema.png" class="img-fluid">
 
             </div>
             <div class="content">
-              <h3> Nombre de Publicación <br> <span> Descripción de publicación</span></h3>
+              <h3> Publication name <br> <span> About this post...<br>
+                  <a href="#" class="btn botonpost">Read More </a>
+              </span></h3>
             </div>
           </div>
         </div>
 
         <div class="col-sm-4">
-          <div class="placeBox">
+          <div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
             <div class="imgBx">
               <img src="pictures/tema.png" class="img-fluid">
 
             </div>
             <div class="content">
-              <h3> Nombre de Publicación <br> <span> Descripción de publicación</span></h3>
+              <h3> Why AlwayScript? <br> <span> The history of my introduction to the world
+          of the technology was quite peculiar. It all started 16 years ago...<br>
+                <a href="#" class="btn botonpost">Read More </a>
+               </span></h3>
+              <br>
+              
             </div>
           </div>
         </div>
-
       </div>
-
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
 
     </div>
   </section>
   <!-- Aqui termina la segunda fila -->
 
-  <footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="js/code.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+<footer>
     <div class="container">
       <div class="row">
         <div class="col-sm-12 animated fadeInUp">
@@ -169,23 +188,7 @@
             | 2019 - 2020 | All rights reserved ©
           </p>
         </div>
-
       </div>
-
     </div>
   </footer>
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-    crossorigin="anonymous"></script>
-  <script src="js/code.js"></script>
-
-
-
-</body>
-
 </html>
