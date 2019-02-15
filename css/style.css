@@ -2,7 +2,7 @@ header {position: absolute;z-index: 100;width: 100%;font-family: 'Bad Script', c
 
 html {scroll-behavior: smooth;}
 /* Scrollbar */
-::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #F5F5F5;}
+::-webkit-scrollbar-track{box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #F5F5F5;}
 
 ::-webkit-scrollbar{width: 8px;background-color: #F5F5F5;}
 
