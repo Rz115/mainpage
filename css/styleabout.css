@@ -45,6 +45,13 @@ main {flex: 1 0 auto;}
 
 .banner p{margin: 1em 0;padding: 0;font-size: 1.2em;font-family: 'Kalam', cursive;line-height: 1.5em;color: #000000;}
 
+/*  PARA COLOCAR FORMULARIO DE ZOHO FORMS*/
+a.op {margin: 0;padding: 0;
+    font-size: 1.2em;font-weight: 800;color: #000000;text-transform: uppercase;font-family: 'Fredericka the Great', cursive;}
+a:hover {color: rgb(0, 0, 0); text-decoration: none; }
+
+.backgroundBg {background: rgb(0, 0, 0, 0);color: rgb(0, 0, 0);}
+    
 /*Pen code from this point on*/
 .btn {clear:both;white-space:nowrap;font-size:.8em;display:inline-block;border-radius:5px;box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);margin:2px;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s;overflow:hidden}
 
