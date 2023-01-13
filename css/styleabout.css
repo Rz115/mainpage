@@ -1,17 +1,18 @@
 header {position: absolute;z-index: 10;width: 100%;font-family: 'Bad Script', cursive;padding: 30px;}
- 
+div {text-align: justify;  text-justify: inter-word;}
 main {flex: 1 0 auto;}
-
 .navbar{padding: 20px 0;}
+
 
 /* ABOUT PAGE CODE--------------------------------------------------------------------- */
 .navbar-brands {font-weight: 800;text-transform: uppercase;font-size: 2em;color: #000000;}
-
 .navbar-brands:hover{text-decoration: none;color: #000000;}
 /*
 .navbar-toggler-icon {
-    -webkit-filter: invert(100%);
+  -webkit-filter: invert(100%);
 } */
+
+
 
 .nav-item{font-weight: 800;text-transform: uppercase;font-family: 'Kaushan Script', cursive;}
 
