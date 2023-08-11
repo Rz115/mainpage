@@ -19,6 +19,14 @@
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
+    /* AWESOME fONTS*/
+    --variable-color: linear-gradient(90deg, #5170ff, #ff66c4);
+    --variable2-color: linear-gradient(90deg, #5de0e6, #004aad);
+    --variable3-color: linear-gradient(90deg, #000000, #737373);
+    --variable4-color: linear-gradient(90deg, #ff5757, #8c52ff);
+    --variable5-color: linear-gradient(90deg, #8c52ff, #ff914d);
+    --variable6-color: linear-gradient(90deg, #0097b2, #7ed957);
+    --variable7-color: linear-gradient(90deg, #112e42, #081b29);
 
 }
 
