@@ -472,6 +472,7 @@ span {
 .education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+    text-align: justify;
 }
 
 /* ------- START THE SKILLS AND PROFESSIONAL  SECTION -------*/
@@ -577,7 +578,7 @@ span {
     width: 90%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
-    width: 70%;
+    width: 80%;
 }
 /* COLUMNA 2*/
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
