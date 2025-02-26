@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://rz115.github.io/sitemap-index.xml
