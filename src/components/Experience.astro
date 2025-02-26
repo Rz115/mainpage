@@ -1,0 +1,50 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "2024 - Currently...",
+    title: "Freelance",
+    company: "Independent",
+    description:
+      "Executed hardware installation, computer maintenance, and provided SaaS platform training (e.g., Zoho CRM, automation, sharing work experiences). Developed web projects using HTML, CSS, Python, and JavaScript, integrating APIs and testing with Postman. Familiar with Google Cloud Platform (GCP) services. Also familiar with MS office suite applications. Assisted in promotional activities and product launches, supporting marketing events to enhance brand visibility and customer engagement.",
+  },
+  {
+    date: "2019 - 2023",
+    title: "Customer Support Lead",
+    company: "Zoho Corporation",
+    description:
+      "Started with a 3-person support team, handling diverse cases across multiple channels. At Zoho, I advanced from Customer Support Rep to Solutions Architect and later to Customer Support Lead for LATAM. I conducted training, webinars, and product demos, while also developing integrations and microservices. Promoted to Lead in 2021, I managed support operations, optimized team performance, enhanced reporting, and oversaw IT functions, Aircall system management, and marketing initiatives.",
+  },
+  {
+    date: "2018 - 2019",
+    title: "Freelance Developer",
+    company: "Devector",
+    description:
+      "As an independent Project Manager and co-founder, I oversaw hardware installation, computer maintenance, and server implementation for a local company. I also developed customized, responsive websites using Bootstrap, improving the online presence of an international consultancy. My role involved ensuring efficient project execution while adapting to client needs with strong management skills.",
+  },
+  {
+    date: "2018",
+    title: "Cashier",
+    company: "Sam's club",
+    description:
+      "As a Cashier at Sam’s Club, I handled transactions, maintained store cleanliness, stocked shelves, and assisted customers with product locations. I al so conducted satisfaction surveys, supported operations in cold storage, and focused on membership sales and renewals, meeting a strict monthly target of 30 to earn commissions. Through dedication and strong performance, I consistently met goals during my three-month contract, receiving a renewal offer, which I declined due better job offer.",
+  },
+  {
+    date: "2013 - 2018",
+    title: "Sales & Customer Service Manager",
+    company: "Family Games",
+    description:
+      "Running a video game retail and rental store was more than just managing a business—it was about creating an engaging space for gamers while ensuring operational excellence. I led daily operations, managed the team, and provided top-tier customer service. I designed rental promotions, optimized sales with a custom Excel macro system, and maintained gaming platforms. My focus on customer satisfaction, inventory control, and sales targets helped foster a welcoming environment and drive the store’s success.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

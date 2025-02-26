@@ -1,0 +1,207 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import NextJS from "./icons/NextJS.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Unity from "./icons/Unity.astro"
+import Link from "./icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+import Cshare from "./icons/Cshare.astro"
+import Icon_css from "./icons/Icon_css.astro"
+import HTML from "./icons/HTML.astro"
+import Astroicon from "./icons/Astroicon.astro"
+import Android from "./icons/Android.astro"
+import Java from "./icons/Java.astro"
+import Javascript from "./icons/Javascript.astro"
+import Ionic from "./icons/Ionic.astro"
+import Python from "./icons/Python.astro"
+import TypeScript from "./icons/TypeScript.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#208508] text-white",
+    icon: Tailwind,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#208508] text-white",
+    icon: Icon_css,
+  },
+  CSHARE: {
+    name: "C#",
+    class: "bg-[#003159] text-white",
+    icon: Cshare,
+  },
+  UNITY: {
+    name: "Unity",
+    class: "bg-black text-white",
+    icon: Unity,
+  },
+  HTML: {
+    name: "HTML",
+    class: "bg-[#81129f] text-white",
+    icon: HTML,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: Astroicon,
+  },
+  ANDROID: {
+    name: "Android Studio",
+    class: "bg-black text-white",
+    icon: Android,
+  },
+  JAVA: {
+    name: "Java",
+    class: "bg-[#003159] text-white",
+    icon: Java,
+  },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-[#003159] text-white",
+    icon: Javascript,
+  },
+  IONIC: {
+    name: "Ionic",
+    class: "bg-black text-white",
+    icon: Ionic,
+  },
+  TYPESCRIPT: {
+    name: "Typescrirpt",
+    class: "bg-[#003159] text-white",
+    icon: TypeScript,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-black text-white",
+    icon: Bootstrap,
+  },
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#003159] text-white",
+    icon: Python,
+  },
+}
+const PROJECTS = [
+  {
+    title: "Portfolio",
+    description:
+      "My own portfolio, still updating it. Created from scratch with Astro and Tailwind",
+    link: "https://rz115.github.io/mainpage/",
+    github: "https://github.com/Rz115/mainpage",
+    image: "/projects/my_portfolio.webp",
+    tags: [TAGS.ASTRO,TAGS.TAILWIND],
+  },
+  {
+    title: "OrientApp - Mobile Application",
+    description:
+      "Developed mobile application covering the SEE Orienta program: A statewide program about informing graduating students which school or educational option to choose. Reached more than 3k visits/downloads in one month. Created from scratch with Android Studio and Java.",
+    github: "https://github.com/Rz115/OrientApp",
+    image: "/projects/orientapp.webp",
+    tags: [TAGS.ANDROID,TAGS.JAVA],
+  },
+  {
+    title: "PropiedadesMex - Web Application",
+    description:
+      "Web application developed for a real estate client during my time as a freelancer. Created from scratch with Ionic and Typescript.",
+    github: "https://github.com/Rz115/Propiedadesmex",
+    image: "/projects/propiedadesmex.webp",
+    tags: [TAGS.IONIC,TAGS.TYPESCRIPT],
+  },
+  {
+    title: "Elyn Consulting - Web page",
+    description:
+      "Website of an international consultancy, adjusted to all the changes desired by the client. Created from scratch with HTML, CSS and Javascript.",
+    link: "https://www.elynconsultoriainternacional.com/",
+    image: "/projects/elynconsultoria.webp",
+    tags: [TAGS.BOOTSTRAP,TAGS.HTML,TAGS.CSS,TAGS.JAVASCRIPT],
+  },
+  {
+    title: "Web design template",
+    description:
+      "Template for a responsive website, previously used as my portfolio, It can be used later for another thing. Created from scratch with HTML, CSS and Javascript.",
+    github: "https://github.com/Rz115/OldPortfolio",
+    link: "https://aspage.netlify.app",
+    image: "/projects/website_responsive.webp",
+    tags: [TAGS.HTML,TAGS.CSS,TAGS.JAVASCRIPT],
+  },
+  {
+    title: "Bricks & Space Navy - Unity Games",
+    description:
+      "A couple of games I developed that allowed me to learn a new programming language and explore one of the most popular game development platforms. Built from scratch using C# and Unity.",
+    link: "https://drive.google.com/drive/folders/1jktZkwGh53yh5iwgXryuIsXq-JLulCgP?usp=sharing",
+    github: "https://github.com/Rz115/BricksGame",
+    image: "/projects/bricks&navygame.webp",
+    tags: [TAGS.UNITY,TAGS.CSHARE],
+  },
+  {
+    title: "Other Projects...",
+    description:
+      "Repositories where you can find various projects I have worked on over time. These include more games, different codes created in Python as part of a certification course, an eCommerce platform, etc. All projects were built from scratch using different programming languages.",
+    github: "https://github.com/Rz115",
+    image: "/projects/repositoriesgit.webp",
+    tags: [TAGS.NEXT,TAGS.UNITY,TAGS.JAVASCRIPT,TAGS.PYTHON],
+  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+  <div class="w-full md:w-1/2">
+    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+      <img alt="Rkhe" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+    </div>
+  </div>
+
+  <div class="w-full md:w-1/2 md:max-w-lg">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+      {title}
+    </h3>
+    <div class="flex flex-wrap mt-2">
+      <ul class="flex flex-row mb-2 gap-x-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Code
+              
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Link class="size-4" />
+              Preview
+            </LinkButton>
+          )}
+        </footer>
+    </div>
+  </div>
+</article>
+    ))
+  }
+</div>
+
+
+
